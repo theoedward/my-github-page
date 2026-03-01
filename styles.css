@@ -108,7 +108,7 @@
         color: darkgoldenrod;
     }
 
-    /* Catalog page: vertical image list */
+
     .catalog-list{
         display: flex;
         flex-direction: column;
