@@ -76,9 +76,9 @@
         color: darkgoldenrod;
     }
 
-    /* Shared full-page background and text color for About/Contact pages */
+    
     .page-bg{
-        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)100%),url(guns.jpg);
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)100%),url(gunny.jpg);
         background-position: center;
         background-size: cover;
         min-height: 100vh;
@@ -89,15 +89,15 @@
         color: #ffffff;
     }
 
-    /* Simple background class for About and Contact pages */
+    
     .bg-photo{
-        background: url(guns.jpg) center/cover no-repeat fixed;
+        background: url(gunny.jpg) center/cover no-repeat fixed;
         background-position: center;
         background-size: cover;
         min-height: 100vh;
     }
 
-    /* Ensure readable white text and links on pages that use the background photo */
+    
     .bg-photo{
         color: #ffffff;
     }
@@ -108,7 +108,23 @@
         color: darkgoldenrod;
     }
 
-    /* Header / hero / content styles to match video-like layout */
+    /* Catalog page: vertical image list */
+    .catalog-list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    .catalog-list img{
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+
+
     header{
         position: relative;
         z-index: 2;
@@ -146,7 +162,7 @@
         font-weight: 700;
     }
 
-    /* fallback for simple navs used in about/contact */
+    
     header nav a{
         color: #ffffff;
         margin-right: 18px;
