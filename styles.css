@@ -1,81 +1,166 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    background-color:#2727e0 ;
-    margin:0 ;
+* {
+    margin: 0;
     padding: 0;
-    line-height: 1.6;
-
 }
 
-header{
-    background-color: #e0a827;
-    color: rgba(28, 34, 197, 0);
-    padding: 20px;
-    text-align: center;
-
-}
-
-header h1{
-    margin :0;
-}
-
-nav a{
-    color: rgb(18, 227, 150);
-    text-decoration: none;
-    margin:0 10px;
-
-}
-
-nav a:hover{
-    text-decoration: underline;
-
-}
-
-main{
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-main img{
-    max-width: 100%;
-    height:auto;
-    display:block;
-    margin: 20px;
-}
-
-footer{
-    background-color: #333333;
-    color:rgb(255, 255, 255);
-    text-align: center;
-    padding:10px;
-    position:fixed;
-    bottom:0;
+.main{
     width:100%;
-
-}
-p{
-    font-size: 1.1em;
-
-}
-
-a{
-    color:#5c4caf;
-    text-decoration: none;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)100%),url(guns.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
-a:hover{
-    text-decoration: underline;
-
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-img{
-    border: 5px solid #af4c56;
-    border-radius:10px;
+
+.icon{
+    width: 200px;
+    height: 70px;
+    flex: 0 0 200px;
 }
 
-main a [href="mailto"] {
-    color: #224aff;
-    font-weight:bold;
-
+.logo{
+    color: darkgoldenrod;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
 }
+
+.menu{
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul li{
+    margin: 0;
+    font-size: 14px;
+}
+
+    .ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    
+    }
+
+    .ul li a:hover{
+        color: darkgoldenrod;
+    }
+
+    /* Shared full-page background and text color for About/Contact pages */
+    .page-bg{
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)100%),url(guns.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        color: #ffffff;
+    }
+
+    .page-bg a{
+        color: #ffffff;
+    }
+
+    /* Simple background class for About and Contact pages */
+    .bg-photo{
+        background: url(guns.jpg) center/cover no-repeat fixed;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    /* Ensure readable white text and links on pages that use the background photo */
+    .bg-photo{
+        color: #ffffff;
+    }
+    .bg-photo a{
+        color: #ffffff;
+    }
+    .bg-photo a:hover{
+        color: darkgoldenrod;
+    }
+
+    /* Header / hero / content styles to match video-like layout */
+    header{
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 75px);
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-content h1{
+        font-size: 48px;
+        margin: 0 0 10px 0;
+        color: darkgoldenrod;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
+
+    .btn-cta{
+        display: inline-block;
+        background: darkgoldenrod;
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    /* fallback for simple navs used in about/contact */
+    header nav a{
+        color: #ffffff;
+        margin-right: 18px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    header nav a:hover{ color: darkgoldenrod; }
+
+    .page-bg .container{
+        max-width: 900px;
+        margin: 60px auto;
+        color: #fff;
+        background: rgba(0,0,0,0.35);
+        padding: 24px;
+        border-radius: 8px;
+    }
