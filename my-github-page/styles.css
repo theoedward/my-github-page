@@ -1,0 +1,104 @@
+:root {
+  --ak-gold: #d89f18;
+  --ak-gold-light: #f0c85c;
+  --ak-black: #090807;
+  --ak-charcoal: #15130f;
+  --ak-muted: #bfb5a2;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(216, 159, 24, 0.13), transparent 34rem),
+    var(--ak-charcoal);
+}
+
+.navbar {
+  backdrop-filter: blur(14px);
+}
+
+.navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand::before {
+  content: "AK";
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 0.65rem;
+  border: 2px solid var(--ak-gold);
+  color: var(--ak-gold-light);
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.bg-black {
+  background-color: var(--ak-black) !important;
+}
+
+.text-warning {
+  color: var(--ak-gold-light) !important;
+}
+
+.btn-warning {
+  --bs-btn-bg: var(--ak-gold);
+  --bs-btn-border-color: var(--ak-gold);
+  --bs-btn-hover-bg: var(--ak-gold-light);
+  --bs-btn-hover-border-color: var(--ak-gold-light);
+  --bs-btn-color: #120e07;
+  --bs-btn-hover-color: #120e07;
+}
+
+.btn-outline-warning {
+  --bs-btn-color: var(--ak-gold-light);
+  --bs-btn-border-color: var(--ak-gold);
+  --bs-btn-hover-bg: var(--ak-gold);
+  --bs-btn-hover-border-color: var(--ak-gold);
+  --bs-btn-hover-color: #120e07;
+}
+
+.card {
+  border-radius: 0.35rem;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.18);
+}
+
+.card-img-top {
+  background-color: #222;
+}
+
+.product-photo {
+  object-fit: contain;
+  padding: 1rem;
+  background: #ece7da;
+}
+
+.form-control,
+.form-select {
+  border-color: rgba(240, 200, 92, 0.2);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ak-gold);
+  box-shadow: 0 0 0 0.25rem rgba(216, 159, 24, 0.18);
+}
+
+.lead,
+.text-secondary {
+  color: var(--ak-muted) !important;
+}
+
+section.bg-warning {
+  background-color: var(--ak-gold) !important;
+}
+
+@media (max-width: 575.98px) {
+  .display-3 {
+    font-size: 2.65rem;
+  }
+
+  .display-4 {
+    font-size: 2.25rem;
+  }
+}
