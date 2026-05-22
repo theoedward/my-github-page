@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AK Store | Licensed Outdoor & Firearms Retailer</title>
+  <meta name="description" content="AK Store is a licensed firearms and outdoor gear retailer in Gaborone, Botswana, focused on responsible ownership and legal compliance.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-lg bg-black border-bottom border-warning-subtle sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold text-warning" href="index.html">AK Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav ms-auto gap-lg-3">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="catalog.html">Catalog</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="py-5 bg-black">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="text-warning text-uppercase fw-bold small mb-3">Licensed retailer in Gaborone</p>
+            <h1 class="display-3 fw-bold lh-1 mb-4">Responsible outdoor and firearm gear, handled the right way.</h1>
+            <p class="lead text-secondary mb-4">AK Store supports lawful ownership, safe handling, and in-store verification for eligible customers in Botswana.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-warning btn-lg fw-bold" href="catalog.html">View catalog</a>
+              <a class="btn btn-outline-light btn-lg" href="contact.html">Visit our store</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card bg-body-tertiary border-warning-subtle shadow">
+              <div class="card-body p-4">
+                <h2 class="h3 card-title">Customer Access</h2>
+                <p class="card-text text-secondary">Create a new customer profile or sign in for store updates and appointment reminders.</p>
+                <div class="btn-group w-100 mb-3" role="group" aria-label="Choose access type">
+                  <input class="btn-check" type="radio" name="accessMode" id="modeSignup" value="signup" checked>
+                  <label class="btn btn-outline-warning" for="modeSignup">New customer</label>
+                  <input class="btn-check" type="radio" name="accessMode" id="modeLogin" value="login">
+                  <label class="btn btn-outline-warning" for="modeLogin">Returning</label>
+                </div>
+                <form id="accessForm">
+                  <div class="mb-3" id="nameGroup">
+                    <label class="form-label fw-bold" for="fullName">Full name</label>
+                    <input class="form-control" id="fullName" name="fullName" type="text" placeholder="Your full name" autocomplete="name">
+                  </div>
+                  <div class="mb-3" id="phoneGroup">
+                    <label class="form-label fw-bold" for="phone">Phone number</label>
+                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="+267 ..." autocomplete="tel">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-bold" for="email">Email address</label>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-bold" for="password">Password</label>
+                    <input class="form-control" id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password" required>
+                  </div>
+                  <button class="btn btn-warning w-100 fw-bold" id="accessButton" type="submit">Create profile</button>
+                  <p class="small text-warning fw-bold mt-3 mb-0" id="accessMessage" role="status"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-warning text-black py-3">
+      <div class="container">
+        <strong>In-store verification required.</strong>
+        <span>All regulated products require legal eligibility checks, valid identification, and responsible handling guidance before purchase.</span>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <p class="text-warning text-uppercase fw-bold small mb-2">Why customers visit us</p>
+            <h2 class="display-6 fw-bold">Clear advice before any sale.</h2>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card h-100 bg-body-tertiary border-secondary">
+                  <div class="card-body">
+                    <h3 class="h5">Licensed Guidance</h3>
+                    <p class="text-secondary mb-0">We help customers understand product fit, legal requirements, and safe storage expectations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 bg-body-tertiary border-secondary">
+                  <div class="card-body">
+                    <h3 class="h5">Responsible Service</h3>
+                    <p class="text-secondary mb-0">Our process prioritizes safety, documentation, and verified in-store consultations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 bg-body-tertiary border-secondary">
+                  <div class="card-body">
+                    <h3 class="h5">Outdoor Gear</h3>
+                    <p class="text-secondary mb-0">Browse selected hunting, range, and field accessories alongside regulated products.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-black">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+          <div>
+            <p class="text-warning text-uppercase fw-bold small mb-2">Featured catalog</p>
+            <h2 class="display-6 fw-bold mb-0">Popular items</h2>
+          </div>
+          <a class="btn btn-outline-warning" href="catalog.html">See all products</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card h-100 bg-body-tertiary border-secondary">
+              <img class="card-img-top product-photo" height="230" src="https://commons.wikimedia.org/wiki/Special:FilePath/US_Marine_M16A4_Rifle_ACOG.jpg?width=900" alt="US Marine holding an M16A4 rifle with ACOG sight">
+              <div class="card-body">
+                <p class="text-warning text-uppercase fw-bold small mb-2">Rifle</p>
+                <h3 class="h5">M16A4 Rifle</h3>
+                <p class="text-secondary mb-0">BWP 1,250</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 bg-body-tertiary border-secondary">
+              <img class="card-img-top product-photo" height="230" src="https://commons.wikimedia.org/wiki/Special:FilePath/Glock_19_pistol.jpg?width=900" alt="Glock 19 pistol product image">
+              <div class="card-body">
+                <p class="text-warning text-uppercase fw-bold small mb-2">Pistol</p>
+                <h3 class="h5">Glock 19 Pistol</h3>
+                <p class="text-secondary mb-0">BWP 850</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 bg-body-tertiary border-secondary">
+              <img class="card-img-top product-photo" height="230" src="https://commons.wikimedia.org/wiki/Special:FilePath/Remington_870_Fieldmaster.jpg?width=900" alt="Remington 870 Fieldmaster shotgun product image">
+              <div class="card-body">
+                <p class="text-warning text-uppercase fw-bold small mb-2">Shotgun</p>
+                <h3 class="h5">Remington 870</h3>
+                <p class="text-secondary mb-0">BWP 950</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black border-top border-secondary py-4">
+    <div class="container">
+      <p class="text-secondary mb-0">&copy; 2026 Theo Edward Rasedikela. AK Store, Gaborone, Botswana.</p>
+    </div>
+  </footer>
+</body>
+</html>
